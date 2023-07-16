@@ -1,9 +1,11 @@
+import datetime
 import hashlib
 import hmac
-import datetime
+
 
 def generate_signature(key, message):
     return hmac.new(key, message.encode('utf-8'), hashlib.sha256).digest()
+
 
 def calculate_signature(request, region, service, access_key, secret_key):
     # Step 1: Create a Canonical Request
@@ -47,6 +49,7 @@ host;content-type
     authorization_header = f"{algorithm} Credential={access_key}/{credential_scope}, SignedHeaders=host;content-type, Signature={signature}"
 
     return authorization_header
+
 
 # Example usage
 region = 'us-west-2'
