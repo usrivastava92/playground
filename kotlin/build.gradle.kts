@@ -35,7 +35,7 @@ dependencies {
 
 	// SLF4J for logging
 	implementation("org.slf4j:slf4j-api:1.7.32")
-	implementation("org.slf4j:slf4j-simple:1.7.32")
+	implementation("org.slf4j:slf4j-simple:1.7.36")
 
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
