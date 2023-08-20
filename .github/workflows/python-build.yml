@@ -44,4 +44,9 @@ jobs:
         # default set of ruff rules with GitHub Annotations
         ruff --format=github --target-version=py37 .
     - name: Test with pytest
-      run: pytest
+      run: |
+        if [ -z "$(find . -name '*.py')" ]; then
+          echo "No Python files found. Skipping build and test."
+          exit 0
+        fi
+        pytest
