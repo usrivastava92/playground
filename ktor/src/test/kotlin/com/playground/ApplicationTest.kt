@@ -1,5 +1,3 @@
 package com.playground
 
-
-class ApplicationTest {
-}
+class ApplicationTest
