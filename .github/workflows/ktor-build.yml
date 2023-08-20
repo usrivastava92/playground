@@ -34,3 +34,4 @@ jobs:
       run: |
         cd ktor
         ./gradlew build
+        ./gradlew ktlintFormat
