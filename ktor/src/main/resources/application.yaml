@@ -1,6 +1,6 @@
 ktor:
   application:
     modules:
-      - com.playground.ApplicationKt.module
+      - com.playground.KtorApplicationKt.module
   deployment:
     port: 8080
