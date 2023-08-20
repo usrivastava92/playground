@@ -3,6 +3,7 @@ spring:
     gateway:
       routes:
         - id: uri
+          uri: https://google.com
           predicates:
             - Path=**
           filters:
