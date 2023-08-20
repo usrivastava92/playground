@@ -31,7 +31,4 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build & Test
-      run: |
-        cd ktor
-        ./gradlew build
-        ./gradlew ktlintFormat
+      run: ./bin/build-ktor.sh
