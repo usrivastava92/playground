@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: uri
+          predicates:
+            - Path=**
+          filters:
+            - RequestHeaderToRequestUri=location
+
