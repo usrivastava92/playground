@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   build:
-
+    name: kotlin build
     runs-on: ubuntu-latest
 
     steps:
