@@ -6,7 +6,7 @@ plugins {
     id("org.graalvm.buildtools.native") version "0.9.25"
     id("org.jlleitschuh.gradle.ktlint") version "11.5.1"
     kotlin("jvm") version "1.9.10"
-    kotlin("plugin.spring") version "1.9.10"
+    kotlin("plugin.spring") version "1.9.20"
 }
 
 group = "com.playground"
