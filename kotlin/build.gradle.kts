@@ -31,7 +31,7 @@ dependencies {
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.0.7")
+    implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.0.8")
 
     developmentOnly("io.netty:netty-all:4.1.97.Final")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
