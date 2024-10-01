@@ -37,7 +37,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
     implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.0.8")
 
-    developmentOnly("io.netty:netty-all:4.1.101.Final")
+    developmentOnly("io.netty:netty-all:4.1.114.Final")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
