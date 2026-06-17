@@ -23,5 +23,7 @@ jobs:
         distribution: 'corretto'
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
-    - name: Build & Test
-      run: ./bin/build-kotlin.sh -x test
+    - name: Format
+      run: cd kotlin && ./gradlew ktlintFormat
+    - name: Build
+      run: cd kotlin && ./gradlew build -x test
