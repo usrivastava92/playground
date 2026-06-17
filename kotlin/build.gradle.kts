@@ -24,6 +24,9 @@ configurations {
     compileOnly {
         extendsFrom(configurations.annotationProcessor.get())
     }
+    all {
+        exclude(group = "io.netty", module = "netty-transport-native-epoll")
+    }
 }
 
 repositories {
@@ -35,9 +38,7 @@ dependencies {
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.3.4") {
-        exclude(group = "io.netty", module = "netty-transport-native-epoll")
-    }
+    implementation("org.springframework.cloud:spring-cloud-starter-gateway:4.3.4")
 
     implementation("io.netty:netty-all:4.2.15.Final")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
