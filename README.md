@@ -6,6 +6,7 @@
 [![Python Status](https://img.shields.io/github/actions/workflow/status/usrivastava92/playground/golang-build.yml?logo=python&branch=master)](https://github.com/usrivastava92/playground/actions)
 
 [![License](https://img.shields.io/github/license/usrivastava92/playground)](https://github.com/usrivastava92/playgound/blob/master/LICENSE)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/usrivastava92/playground/badge)](https://scorecard.dev/status/github.com/usrivastava92/playground)
 
 ## Intro
 
